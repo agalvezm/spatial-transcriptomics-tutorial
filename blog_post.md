@@ -12,11 +12,11 @@ Several technologies have emerged in recent years, each with distinct approaches
 
 | Technology            | Origin / Platform                     | Resolution       | Approach                                 | Unique Features & Notes                                                     | Use Case Fit                 |
 |-----------------------|----------------------------------------|------------------|------------------------------------------|------------------------------------------------------------------------------|------------------------------|
-| **10x Visium**        | 10x Genomics (2019)                    | ~55 µm (multi-cell) | Slide-based capture on barcoded spots    | Mature ecosystem; open-source-friendly   | General-purpose profiling    |
-| **Slide-seq / V2**    | Macosko Lab, Harvard (2019-€“2020)       | ~10 µm (near single-cell) | Barcoded beads on slide                   | Higher spatial resolution; requires complex bead registration                | Fine-grained spatial detail  |
-| **MERFISH / seqFISH** | Zhuang Lab / Raj Lab (2015-€“2021)       | Subcellular       | Multiplexed in situ hybridization         | Single-molecule precision; targeted gene panels                              | Subcellular mapping          |
+| **10x Visium**        | 10x Genomics (2019)                    | ~55 Âµm (multi-cell) | Slide-based capture on barcoded spots    | Mature ecosystem; open-source-friendly   | General-purpose profiling    |
+| **Slide-seq / V2**    | Macosko Lab, Harvard (2019-2020)       | ~10 Âµm (near single-cell) | Barcoded beads on slide                   | Higher spatial resolution; requires complex bead registration                | Fine-grained spatial detail  |
+| **MERFISH / seqFISH** | Zhuang Lab / Raj Lab (2015-2021)       | Subcellular       | Multiplexed in situ hybridization         | Single-molecule precision; targeted gene panels                              | Subcellular mapping          |
 | **GeoMx / CosMx**     | NanoString Technologies (2020-2022)    | CosMx: single-cell<br>GeoMx: low | Barcoded ROI-based probe hybridization   | Flexible RNA/protein profiling; strong FFPE support                          | Targeted profiling in clinical |
-| **Stereo-seq**        | BGI Genomics (2021)                    | ~0.5 µm (subcellular) | DNA nanoball arrays                       | Ultra-high resolution; cutting-edge tech; high data volume                   | Ultra-high-res spatial mapping |
+| **Stereo-seq**        | BGI Genomics (2021)                    | ~0.5 Âµm (subcellular) | DNA nanoball arrays                       | Ultra-high resolution; cutting-edge tech; high data volume                   | Ultra-high-res spatial mapping |
 
 
 
@@ -94,7 +94,7 @@ adata
 
 
 
-    AnnData object with n_obs Ã— n_vars = 4035 Ã— 36601
+    AnnData object with n_obs Ãƒâ€” n_vars = 4035 Ãƒâ€” 36601
         obs: 'in_tissue', 'array_row', 'array_col'
         var: 'gene_ids', 'feature_types', 'genome'
         uns: 'spatial'
@@ -108,7 +108,7 @@ But Visium adds **two extra layers** of spatial context:
 
 1. **Coordinates** Each spot on the slide is associated with spatial (x, y) coordinates, enabling us to map gene expression back onto tissue morphology.
 
-2. **Tissue Image**€“ Alongside the expression data, Visium includes an image of the tissue section. This makes it possible to overlay gene expression patterns on top of actual histology, bridging morphology and molecular data.
+2. **Tissue Image**â‚¬â€œ Alongside the expression data, Visium includes an image of the tissue section. This makes it possible to overlay gene expression patterns on top of actual histology, bridging morphology and molecular data.
 
 These extra layers turn a familiar data object into something more informative, adding new dimensions that change how we explore and interpret the data.
 
@@ -166,7 +166,7 @@ sq.pl.spatial_scatter(
     
 
 
-You might notice that total counts show some spatial structure and aren'€™t randomly distributed across the tissue. In some cases, these patterns may align with known tissue morphology, hinting at potential biological relevance. This opens up the possibility that total counts may reflect meaningful differences, like local cell density or transcriptional activity.
+You might notice that total counts show some spatial structure and aren'â‚¬â„¢t randomly distributed across the tissue. In some cases, these patterns may align with known tissue morphology, hinting at potential biological relevance. This opens up the possibility that total counts may reflect meaningful differences, like local cell density or transcriptional activity.
 
 #### So... what should we do?
 
@@ -505,7 +505,7 @@ sq.pl.spatial_scatter(adata, color = ['OAS1'])
 In addition to identifying genes that vary across transcriptional clusters, we can also look for genes that show **spatial structure**, that is, genes whose expression levels are **non-randomly distributed across the tissue**.
 
 
-One way to quantify this is with **Moran's I**, a measure of spatial autocorrelation. Genes with high Moran'€™s I values tend to be expressed in spatially coherent patterns, rather than scattered randomly across spots.
+One way to quantify this is with **Moran's I**, a measure of spatial autocorrelation. Genes with high Moran'â‚¬â„¢s I values tend to be expressed in spatially coherent patterns, rather than scattered randomly across spots.
 
 We can compute this using:
 
