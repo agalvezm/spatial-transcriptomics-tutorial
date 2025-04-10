@@ -2,7 +2,7 @@
 
 **Author:** Angel Galvez Merchan
 
-**Link to Google Colab:**: https://colab.research.google.com/drive/1nrnBi1LsigG3YEDEJTg5xGwq6c3ye4X3?usp=sharing
+**Link to Google Colab:** https://colab.research.google.com/drive/1nrnBi1LsigG3YEDEJTg5xGwq6c3ye4X3?usp=sharing
 
 Spatial transcriptomics is transforming our understanding of tissue biology by enabling researchers to measure gene expression within the spatial context of intact tissues. Unlike traditional single-cell RNA sequencing (scRNA-seq), which dissociates cells and loses spatial information, spatial transcriptomics retains the physical location of gene expression, opening up powerful insights into tissue architecture, cellular niches, and microenvironments in health and disease.
 
