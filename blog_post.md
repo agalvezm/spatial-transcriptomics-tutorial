@@ -27,7 +27,7 @@ Several technologies have emerged in recent years, each with distinct approaches
 
 In this blog post, we will focus on **10x Genomics Visium** because it provides a particularly smooth transition into spatial transcriptomics for those already familiar with scRNA-seq. Its data structure and analysis workflow align closely with standard scRNA-seq practices, allowing researchers to reuse tools like `scanpy` and `anndata` with minimal adaptation. Combined with a robust commercial ecosystem, standardized outputs, and strong community support, Visium is an ideal starting point for single-cell experts looking to explore spatial context.
 
-In fact, this was how I personally began exploring spatial transcriptomics: by extending familiar scRNA-seq workflows into spatial data, and gradually discovering the rich new layers it adds to biological interpretation. I hope this approach helps you make the transition as smoothly and enjoyably as it did for me.
+In fact, this was how I personally began exploring spatial transcriptomics: by extending familiar scRNA-seq workflows into spatial data, and gradually discovering the rich new layers it adds to biological interpretation. I hope this approach helps you make the transition as smooth and enjoyable as it did for me.
 
 
 
