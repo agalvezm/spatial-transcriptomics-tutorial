@@ -110,7 +110,7 @@ But Visium adds **two extra layers** of spatial context:
 
 1. **Coordinates** Each spot on the slide is associated with spatial (x, y) coordinates, enabling us to map gene expression back onto tissue morphology.
 
-2. **Tissue Image**€“ Alongside the expression data, Visium includes an image of the tissue section. This makes it possible to overlay gene expression patterns on top of actual histology, bridging morphology and molecular data.
+2. **Tissue Image**“ Alongside the expression data, Visium includes an image of the tissue section. This makes it possible to overlay gene expression patterns on top of actual histology, bridging morphology and molecular data.
 
 These extra layers turn a familiar data object into something more informative, adding new dimensions that change how we explore and interpret the data.
 
@@ -168,7 +168,7 @@ sq.pl.spatial_scatter(
     
 
 
-You might notice that total counts show some spatial structure and aren'€™t randomly distributed across the tissue. In some cases, these patterns may align with known tissue morphology, hinting at potential biological relevance. This opens up the possibility that total counts may reflect meaningful differences, like local cell density or transcriptional activity.
+You might notice that total counts show some spatial structure and aren't randomly distributed across the tissue. In some cases, these patterns may align with known tissue morphology, hinting at potential biological relevance. This opens up the possibility that total counts may reflect meaningful differences, like local cell density or transcriptional activity.
 
 #### So... what should we do?
 
@@ -507,7 +507,7 @@ sq.pl.spatial_scatter(adata, color = ['OAS1'])
 In addition to identifying genes that vary across transcriptional clusters, we can also look for genes that show **spatial structure**, that is, genes whose expression levels are **non-randomly distributed across the tissue**.
 
 
-One way to quantify this is with **Moran's I**, a measure of spatial autocorrelation. Genes with high Moran'€™s I values tend to be expressed in spatially coherent patterns, rather than scattered randomly across spots.
+One way to quantify this is with **Moran's I**, a measure of spatial autocorrelation. Genes with high Moran's I values tend to be expressed in spatially coherent patterns, rather than scattered randomly across spots.
 
 We can compute this using:
 
